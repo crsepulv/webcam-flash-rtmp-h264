@@ -15,6 +15,8 @@ function  setupFlash() {
             // To use express install, set to playerProductInstall.swf, otherwise the empty string. 
             var xiSwfUrlStr = "swf/playerProductInstall.swf";
             var flashvars = {
+                 urlStreaming: "rtmp://[server]/[app]",
+                streamName: "[streamName]",
                 camera_bandwidth:"100000",//Specifies the maximum amount of bandwidth that the current outgoing video feed can use, in bytes per second. To specify that the video can use as much bandwidth as needed to maintain the value of quality, pass 0 for bandwidth. The default value is 16384.
                 camera_quality:"0",//An integer that specifies the required level of picture quality, as determined by the amount of compression being applied to each video frame. Acceptable values range from 1 (lowest quality, maximum compression) to 100 (highest quality, no compression). To specify that picture quality can vary as needed to avoid exceeding bandwidth, pass 0 for quality.
                 camera_fps:"30",
